@@ -248,4 +248,25 @@ jQuery(document).ready(function($) {
   };
   siteScroll();
 
+  $("select[name='shop']").change(function(){
+      var selectedShop = $("select[name='shop'] option:selected").val();
+      toggleShop(selectedShop);
+      localStorage.setItem("selectedShop", selectedShop);
+  });
+
+  var toggleShop = function(selectedShop){
+      var unselectedShop = 'wollicreek';
+      if(selectedShop=='wollicreek'){
+          unselectedShop = 'mascot';
+      }
+      console.log(selectedShop);
+      $('*[data-shop="'+unselectedShop+'"]').hide();
+      $('*[data-shop="'+selectedShop+'"]').show();
+  };
+
+  if(localStorage.getItem("selectedShop")){
+      toggleShop(localStorage.getItem("selectedShop"));
+      $("select[name='shop']").val(localStorage.getItem("selectedShop"));
+  };
+
 });

@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5,
 .color-white-opacity-5 {
   color: rgba(255, 255, 255, 0.5); }
 
+[data-shop="wollicreek"] {
+  display: none;
+}
+
 .site-wrap:before {
   display: none;
   -webkit-transition: .3s all ease-in-out;
@@ -532,8 +536,8 @@ h1, h2, h3, h4, h5,
   position: absolute;
   z-index: 100;
   width: 100%; }
-  .sticky-wrapper + .site-blocks-cover {
-    margin-top: 96px; }
+/*  .sticky-wrapper + .site-blocks-cover {
+    margin-top: 96px; }*/
   .sticky-wrapper .site-navbar {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -566,8 +570,9 @@ h1, h2, h3, h4, h5,
     bottom: -250px;
     width: 100%; }
   .site-blocks-cover, .site-blocks-cover > .container > .row {
-    min-height: 600px;
-    height: calc(100vh); }
+    min-height: 450px;
+    /*height: calc(100vh); */
+  }
   .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
     min-height: 400px;
     height: calc(20vh); }
@@ -1729,3 +1734,14 @@ h1, h2, h3, h4, h5,
 
 .footer-subscribe .btn {
   height: 43px; }
+
+.shop-dropdown {
+  height: inherit;
+  border-radius: 0.25rem;
+  width: inherit;
+  padding: 0.2rem 0.55rem;
+}
+
+.section-title-small {
+  font-size: 30px;
+}

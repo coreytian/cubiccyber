@@ -38,28 +38,6 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
-    <div class="top-bar py-3 bg-light" id="home-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 text-left">
-            <ul class="social-media">
-              <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <p class="mb-0 float-right">
-              <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2"></span><span class="d-none d-lg-inline-block">+1 234 5678 9101</span></a></span>
-              <span><a href="#"><span class="icon-envelope mr-2"></span><span class="d-none d-lg-inline-block">info@yourdomain.com</span></a></span>
-            </p>
-            
-          </div>
-        </div>
-      </div> 
-    </div>
 
     <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
 
@@ -67,9 +45,13 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Consula<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Bootstrap</a></h1>
           </div>
-          <div class="col-12 col-md-10 d-none d-xl-block">
+          <select  class="form-control shop-dropdown"name="shop">
+            <option value="mascot">Mascot</option>
+            <option value="wollicreek">Wolli Creek</option>
+          </select>
+          <div class="col-12 col-md-6 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -77,8 +59,6 @@
                 <li><a href="#about-section" class="nav-link">About Us</a></li>
                 <li><a href="#team-section" class="nav-link">Team</a></li>
                 <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="#blog-section" class="nav-link">Blog</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -102,7 +82,7 @@
                         
             <div class="row mb-4">
               <div class="col-md-6">
-                <h1>We Are The Best Consulting Agency</h1>
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
                 <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
                 <div>
                   <a href="#" class="btn btn-primary mr-2 mb-2">Get Started</a>
@@ -116,8 +96,61 @@
     </div>  
 
 
-    <div class="site-section" id="about-section">
-      <div class="container">
+    <div class="site-section">
+      <div class="container" data-shop="mascot">
+        <div class="row align-items-lg-center">
+          <div class="col-md-6 mb-5 mb-lg-0 position-relative">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.448077334018!2d151.1528886806415!3d-33.93001935322706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1aee476aacb%3A0x5e866d01591432f9!2sCubic+Cyber+Cafe!5e0!3m2!1sen!2sau!4v1565585959844!5m2!1sen!2sau" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          </div>
+          <div class="col-md-5 ml-auto">
+            <!--<h3 class="section-sub-title">About Us</h3>-->
+            <h2 class="section-title mb-3 section-title-small">Address</h2>
+            <p>Shop 15/35 Arncliffe St, Wolli Creek NSW 2205<br/>(same street as Woolworths)</p>
+            <h2 class="section-title mb-3 section-title-small">Opening Hours</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col col-3">Monday</div>
+                <div class="col col-8">12pm - 1am</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Tuesday</div>
+                <div class="col col-8">12pm - 1am</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Wednesday</div>
+                <div class="col col-8">12pm - 1am</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Thursday</div>
+                <div class="col col-8">12pm - 1am</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Friday</div>
+                <div class="col col-8">12pm - 5am</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Saturday</div>
+                <div class="col col-8">12pm - 5am</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Sunday</div>
+                <div class="col col-8">12pm - 1am</div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="container" data-shop="wollicreek">
         <div class="row align-items-lg-center">
           <div class="col-md-6 mb-5 mb-lg-0 position-relative">
             <img src="images/about_1.jpg" class="img-fluid" alt="Image">
@@ -128,13 +161,61 @@
           </div>
           <div class="col-md-5 ml-auto">
             <h3 class="section-sub-title">About Us</h3>
-            <h2 class="section-title mb-3">Welcome To Consula</h2>
+            <h2 class="section-title mb-3">Welcome To WC</h2>
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
             <p><a href="#" class="btn btn-primary btn-black--hover">Learn More</a></p>
           </div>
         </div>
       </div>
     </div>
+
+
+    <section class="site-section border-bottom bg-light" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Our Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-desktop"></span></div>
+              <div>
+                <h3>Business Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-print"></span></div>
+              <div>
+                <h3>Market Analysis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-coffee"></span></div>
+              <div>
+                <h3>User Monitoring</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
 
     <section class="site-section border-bottom" id="team-section">
       <div class="container">
@@ -242,82 +323,6 @@
 
 
     
-
-    <section class="site-section border-bottom bg-light" id="services-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">Services</h3>
-            <h2 class="section-title mb-3">Our Services</h2>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-autorenew"></span></div>
-              <div>
-                <h3>Business Consulting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
-              <div>
-                <h3>Market Analysis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
-              <div>
-                <h3>User Monitoring</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div>
-              <div>
-                <h3>Insurance Consulting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div>
-              <div>
-                <h3>Financial Investment</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div>
-              <div>
-                <h3>Financial Management</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
 
     <section class="site-section testimonial-wrap" id="testimonials-section">
       <div class="container">
