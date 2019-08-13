@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5,
 .color-white-opacity-5 {
   color: rgba(255, 255, 255, 0.5); }
 
-[data-shop="wollicreek"] {
+[data-shop="wc"] {
   display: none;
 }
 
@@ -1744,4 +1744,67 @@ h1, h2, h3, h4, h5,
 
 .section-title-small {
   font-size: 30px;
+}
+
+.open-message {
+  -webkit-animation: breathing 2s ease-out infinite normal;
+  animation: breathing 2s ease-out infinite normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.open-message-timetable {
+  display:none;
+  margin-left: 10px;
+  color:green;
+}
+
+.closed-message-timetable{
+  margin-left: 10px;
+  color:darkred;
+  display: none;
+}
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }

@@ -255,8 +255,8 @@ jQuery(document).ready(function($) {
   });
 
   var toggleShop = function(selectedShop){
-      var unselectedShop = 'wollicreek';
-      if(selectedShop=='wollicreek'){
+      var unselectedShop = 'wc';
+      if(selectedShop=='wc'){
           unselectedShop = 'mascot';
       }
       console.log(selectedShop);
@@ -269,4 +269,57 @@ jQuery(document).ready(function($) {
       $("select[name='shop']").val(localStorage.getItem("selectedShop"));
   };
 
+
+	var openingTimeMascot = {
+		1: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
+		2: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
+		3: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
+		4: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
+		5: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
+		6: [0,1,2,3,4,5,11,12,13,14,15,16,17,18,19,20,21,22,23],
+		7: [0,1,2,3,4,5,11,12,13,14,15,16,17,18,19,20,21,22,23]
+	};
+    var openingTimeWC = {
+        1: [0,12,13,14,15,16,17,18,19,20,21,22,23],
+        2: [0,12,13,14,15,16,17,18,19,20,21,22,23],
+        3: [0,12,13,14,15,16,17,18,19,20,21,22,23],
+        4: [0,12,13,14,15,16,17,18,19,20,21,22,23],
+        5: [0,12,13,14,15,16,17,18,19,20,21,22,23],
+        6: [0,1,2,3,4,12,13,14,15,16,17,18,19,20,21,22,23],
+        7: [0,1,2,3,4,12,13,14,15,16,17,18,19,20,21,22,23]
+    };
+	var checkOpeningTime = function(){
+		var d = new Date();
+		var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+		var offsetSydney = 10;
+		var sydneyDate = new Date(utc + (3600000*offsetSydney));
+		var day = sydneyDate.getDay();
+		var hours = sydneyDate.getHours();
+		var openMascot = openingTimeMascot[day].includes(hours);
+		var openWC = openingTimeWC[day].includes(hours);
+		console.log('Mascot open:'+ openMascot);
+        console.log('WolliCreek open:'+ openWC);
+
+        $('.open-message-timetable, .closed-message-timetable').hide();
+		if(openMascot){
+			$('#mascot-open-message').show();
+            $('#mascot-closed-message').hide();
+            $('.timetable-mascot .row:nth-child('+day+') .open-message-timetable').css('display', 'inline-block');
+		}else{
+            $('#mascot-open-message').hide();
+            $('#mascot-closed-message').show();
+            $('.timetable-mascot .row:nth-child('+day+') .closed-message-timetable').css('display', 'inline-block');
+		}
+        if(openWC){
+            $('#wc-open-message').show();
+            $('#wc-closed-message').hide();
+            $('.timetable-wc .row:nth-child('+day+') .open-message-timetable').css('display', 'inline-block');
+        }else{
+            $('#wc-open-message').hide();
+            $('#wc-closed-message').show();
+            $('.timetable-wc .row:nth-child('+day+') .closed-message-timetable').css('display', 'inline-block');
+        }
+	};
+    checkOpeningTime();
+    setInterval(checkOpeningTime, 10000);
 });

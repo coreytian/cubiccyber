@@ -49,8 +49,24 @@
           </div>
           <select  class="form-control shop-dropdown"name="shop">
             <option value="mascot">Mascot</option>
-            <option value="wollicreek">Wolli Creek</option>
+            <option value="wc">Wolli Creek</option>
           </select>
+          <div data-shop="mascot" class="col-md-2">
+            <div id="mascot-open-message" class="open-message" style="color:green;display:none">
+              We Are Open Now <i class="icon-check" aria-hidden="true"></i>
+            </div>
+            <div id="mascot-closed-message" class="closed-message" style="color:darkred;display:none">
+              Closed Now
+            </div>
+          </div>
+          <div data-shop="wc" class="col-md-2">
+            <div id="wc-open-message" class="open-message" style="color:green;display:none">
+              We Are Open Now <i class="icon-check" aria-hidden="true"></i>
+            </div>
+            <div id="wc-closed-message" class="closed-message" style="color:darkred;display:none">
+              Closed Now
+            </div>
+          </div>
           <div class="col-12 col-md-6 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
@@ -100,48 +116,69 @@
       <div class="container" data-shop="mascot">
         <div class="row align-items-lg-center">
           <div class="col-md-6 mb-5 mb-lg-0 position-relative">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.448077334018!2d151.1528886806415!3d-33.93001935322706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1aee476aacb%3A0x5e866d01591432f9!2sCubic+Cyber+Cafe!5e0!3m2!1sen!2sau!4v1565585959844!5m2!1sen!2sau" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1753.7608697507933!2d151.18792981809304!3d-33.9241388959663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x174850a2dbfd7e83!2zQ3ViaWMgQ3liZXIgQ2FmZSDphbfni5DnvZHlkpY!5e0!3m2!1sen!2sau!4v1565679799561!5m2!1sen!2sau" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 
           </div>
           <div class="col-md-5 ml-auto">
             <!--<h3 class="section-sub-title">About Us</h3>-->
             <h2 class="section-title mb-3 section-title-small">Address</h2>
-            <p>Shop 15/35 Arncliffe St, Wolli Creek NSW 2205<br/>(same street as Woolworths)</p>
+            <p>208-210 Coward St, Mascot NSW 2020<br/>(3 min walk from Mascot Station)</p>
             <h2 class="section-title mb-3 section-title-small">Opening Hours</h2>
-            <div class="container">
+            <div class="container timetable-mascot">
               <div class="row">
                 <div class="col col-3">Monday</div>
-                <div class="col col-8">12pm - 1am</div>
+                <div class="col col-8">12pm - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col col-3">Tuesday</div>
-                <div class="col col-8">12pm - 1am</div>
+                <div class="col col-8">12pm - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col col-3">Wednesday</div>
-                <div class="col col-8">12pm - 1am</div>
+                <div class="col col-8">12pm - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col col-3">Thursday</div>
-                <div class="col col-8">12pm - 1am</div>
+                <div class="col col-8">12pm - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col col-3">Friday</div>
-                <div class="col col-8">12pm - 5am</div>
+                <div class="col col-8">12pm - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col col-3">Saturday</div>
-                <div class="col col-8">12pm - 5am</div>
+                <div class="col col-8">11am - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col col-3">Sunday</div>
-                <div class="col col-8">12pm - 1am</div>
+                <div class="col col-8">11am - 6am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
               </div>
             </div>
 
@@ -150,20 +187,77 @@
           </div>
         </div>
       </div>
-      <div class="container" data-shop="wollicreek">
+      <div class="container" data-shop="wc">
         <div class="row align-items-lg-center">
           <div class="col-md-6 mb-5 mb-lg-0 position-relative">
-            <img src="images/about_1.jpg" class="img-fluid" alt="Image">
-            <div class="experience">
-              <span class="year">50 years</span>
-              <span class="caption">of experience</span>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.448077334018!2d151.1528886806415!3d-33.93001935322706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1aee476aacb%3A0x5e866d01591432f9!2sCubic+Cyber+Cafe!5e0!3m2!1sen!2sau!4v1565585959844!5m2!1sen!2sau" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
           </div>
           <div class="col-md-5 ml-auto">
-            <h3 class="section-sub-title">About Us</h3>
-            <h2 class="section-title mb-3">Welcome To WC</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
-            <p><a href="#" class="btn btn-primary btn-black--hover">Learn More</a></p>
+            <!--<h3 class="section-sub-title">About Us</h3>-->
+            <h2 class="section-title mb-3 section-title-small">Address</h2>
+            <p>Shop 15/35 Arncliffe St, Wolli Creek NSW 2205<br/>(same street as Woolworths)</p>
+            <h2 class="section-title mb-3 section-title-small">Opening Hours</h2>
+            <div class="container timetable-wc">
+              <div class="row">
+                <div class="col col-3">Monday</div>
+                <div class="col col-8">12pm - 1am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Tuesday</div>
+                <div class="col col-8">12pm - 1am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Wednesday</div>
+                <div class="col col-8">12pm - 1am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Thursday</div>
+                <div class="col col-8">12pm - 1am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Friday</div>
+                <div class="col col-8">12pm - 5am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Saturday</div>
+                <div class="col col-8">12pm - 5am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-3">Sunday</div>
+                <div class="col col-8">12pm - 1am
+                  <div class="open-message open-message-timetable">Open Now</div>
+                  <div class="closed-message-timetable">Closed</div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -213,6 +307,82 @@
 
 
         </div>
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Price</h2>
+          </div>
+        </div>
+        <div class="row justify-content-between mb-5">
+          <table class="table col-6 " style="text-align: center"  data-aos="fade-up">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col" style="width: 20%;">Rate</th>
+              <th scope="col" style="width: 40%;">Member</th>
+              <th scope="col">Casual</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Standard</td>
+              <td>$2.5 / hour</td>
+              <td>$4 / hour</td>
+            </tr>
+            <tr>
+              <td>Premium PC</td>
+              <td>$4.5 / hour</td>
+              <td>$6 / hour</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <table class="table col-5 " style="text-align: center"  data-aos="fade-up">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Print Service</th>
+              <th scope="col">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+              <td>Print & Copy</td>
+              <td>$1 / page</td>
+
+            </tr>
+            <tr>
+              <td>Scan</td>
+              <td>$0.5 / page</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: left;font-size:small;">*when printing more than 10 pages, the first 10 pages would be $1/page, the rest would be $0.5/page</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row justify-content-between mb-5">
+          <table class="table table-bordered col-12" style="text-align: center"  data-aos="fade-up">
+            <tbody>
+            <tr>
+              <td class="table-light">Recharge</td>
+              <td>$20</td>
+              <td class="table-info">$30</td>
+              <td>$50</td>
+              <td>$100</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td class="table-light">Bonus</td>
+              <td>$2.5</td>
+              <td class="table-info">$5</td>
+              <td>$15</td>
+              <td>$50</td>
+              <td>$140</td>
+            </tr>
+
+            </tbody>
+          </table>
       </div>
     </section>
 
