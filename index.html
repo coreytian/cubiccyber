@@ -313,7 +313,7 @@
           </div>
         </div>
         <div class="row justify-content-between mb-5">
-          <table class="table col-6 " style="text-align: center"  data-aos="fade-up">
+          <table class="table col-md-12 col-lg-6 " style="text-align: center"  data-aos="fade-up">
             <thead class="thead-dark">
             <tr>
               <th scope="col" style="width: 20%;">Rate</th>
@@ -332,11 +332,10 @@
               <td>$4.5 / hour</td>
               <td>$6 / hour</td>
             </tr>
-
             </tbody>
           </table>
 
-          <table class="table col-5 " style="text-align: center"  data-aos="fade-up">
+          <table class="table col-md-12 col-lg-5 " style="text-align: center"  data-aos="fade-up">
             <thead class="thead-dark">
             <tr>
               <th scope="col">Print Service</th>
@@ -361,13 +360,15 @@
           </table>
         </div>
 
-        <div class="row justify-content-between mb-5">
-          <table class="table table-bordered col-12" style="text-align: center"  data-aos="fade-up">
+        <div class="row justify-content-between mb-5" data-aos="fade-up">
+          <div class="col-12" >Recharge and Get Bonus</div>
+          <div class="col-12" style="text-align: left;font-size:small;">You get extra credit in your account when you recharge a particular amount of money. So don't recharge $10 five times when you can recharge $50 one time and get $15 bonus.</div>
+          <table class="table table-bordered col-12" style="text-align: center" >
             <tbody>
             <tr>
               <td class="table-light">Recharge</td>
-              <td>$20</td>
-              <td class="table-info">$30</td>
+              <td><a href="javascript: void(0)" data-toggle="tooltip" data-placement="top" title="The promotion will end on 30 September 2019">$20 <span class="text-primary icon-info_outline"></span></a></td>
+              <td><a href="javascript: void(0)" data-toggle="tooltip" data-placement="top" title="The promotion will end on 30 September 2019">$30 <span class="text-primary icon-info_outline"></span></a></td>
               <td>$50</td>
               <td>$100</td>
               <td>$200</td>
@@ -375,14 +376,23 @@
             <tr>
               <td class="table-light">Bonus</td>
               <td>$2.5</td>
-              <td class="table-info">$5</td>
+              <td>$5</td>
               <td>$15</td>
               <td>$50</td>
               <td>$140</td>
             </tr>
+            <tr>
+              <td class="table-light">Total Credit You Get</td>
+              <td>$22.5</td>
+              <td>$35</td>
+              <td>$65</td>
+              <td>$150</td>
+              <td>$340</td>
+            </tr>
 
             </tbody>
           </table>
+      </div>
       </div>
     </section>
 
@@ -793,7 +803,22 @@
         </div>
       </div>
     </footer>
-
+    <div class="modal fade" id="shopSelectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please select the shop</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn btn-outline-primary btn-lg">Mascot Shop</button>
+            <button type="button" class="btn btn-primary btn-lg">Wolli Creek Shop</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div> <!-- .site-wrap -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
