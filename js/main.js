@@ -248,6 +248,8 @@ jQuery(document).ready(function($) {
   };
   siteScroll();
 
+  $('#shopSelectModal').modal('show');
+
   $("select[name='shop']").change(function(){
       var selectedShop = $("select[name='shop'] option:selected").val();
       toggleShop(selectedShop);
@@ -322,4 +324,9 @@ jQuery(document).ready(function($) {
 	};
     checkOpeningTime();
     setInterval(checkOpeningTime, 10000);
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+
 });
