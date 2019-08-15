@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+
 
 	var siteMenuClone = function() {
 
@@ -248,12 +248,20 @@ jQuery(document).ready(function($) {
   };
   siteScroll();
 
-  $('#shopSelectModal').modal('show');
+
+  $('#shopSelectModal button.shopOption').on('click', function(){
+      toggleShop(this.value);
+      $("select[name='shop']").val(this.value);
+      $('#shopSelectModal').modal('hide');
+  });
 
   $("select[name='shop']").change(function(){
       var selectedShop = $("select[name='shop'] option:selected").val();
-      toggleShop(selectedShop);
-      localStorage.setItem("selectedShop", selectedShop);
+      $(".se-pre-con").fadeIn('slow');
+      setTimeout(function() {
+          toggleShop(selectedShop);
+          $(".se-pre-con").fadeOut('slow');
+      }, 800);
   });
 
   var toggleShop = function(selectedShop){
@@ -261,7 +269,8 @@ jQuery(document).ready(function($) {
       if(selectedShop=='wc'){
           unselectedShop = 'mascot';
       }
-      console.log(selectedShop);
+      localStorage.setItem("selectedShop", selectedShop);
+      console.log("shop selected: "+selectedShop);
       $('*[data-shop="'+unselectedShop+'"]').hide();
       $('*[data-shop="'+selectedShop+'"]').show();
   };
@@ -269,7 +278,9 @@ jQuery(document).ready(function($) {
   if(localStorage.getItem("selectedShop")){
       toggleShop(localStorage.getItem("selectedShop"));
       $("select[name='shop']").val(localStorage.getItem("selectedShop"));
-  };
+  }else{
+      $('#shopSelectModal').modal('show');
+  }
 
 
 	var openingTimeMascot = {
