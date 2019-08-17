@@ -1746,6 +1746,17 @@ h1, h2, h3, h4, h5,
   font-size: 30px;
 }
 
+.shopOption{
+  display: block;
+  margin: auto;
+  border-radius: 0.3rem;
+}
+
+#shopSelectModal .modal-body{
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+
 .open-message {
   -webkit-animation: breathing 2s ease-out infinite normal;
   animation: breathing 2s ease-out infinite normal;
@@ -1807,4 +1818,14 @@ h1, h2, h3, h4, h5,
     -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
+}
+.se-pre-con {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(https://www.internode.on.net/images/logo/internode-logo.svg) center no-repeat #fff;
 }
