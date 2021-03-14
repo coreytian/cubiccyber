@@ -286,7 +286,7 @@ jQuery(document).ready(function($) {
 	var openingTimeMascot = {
 		1: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
 		2: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
-		3: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
+		3: [0,1,2,3,4,7,12,13,14,15,16,17,18,19,20,21,22,23],
 		4: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
 		5: [0,1,2,3,4,5,12,13,14,15,16,17,18,19,20,21,22,23],
 		6: [0,1,2,3,4,5,11,12,13,14,15,16,17,18,19,20,21,22,23],
@@ -303,11 +303,8 @@ jQuery(document).ready(function($) {
     };
 	var checkOpeningTime = function(){
 		var d = new Date();
-		var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-		var offsetSydney = 10;
-		var sydneyDate = new Date(utc + (3600000*offsetSydney));
-		var day = sydneyDate.getDay();
-		var hours = sydneyDate.getHours();
+		var day = d.getDay();
+		var hours = d.getHours();
 		var openMascot = openingTimeMascot[day].includes(hours);
 		var openWC = openingTimeWC[day].includes(hours);
 		console.log('Mascot open:'+ openMascot);
