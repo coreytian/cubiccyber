@@ -178,6 +178,10 @@ h1, h2, h3, h4, h5,
     .hover-bg-enlarge .bg-image-md-height {
       height: 300px !important; } }
 
+.site-font-color{
+  color: #fb5a02;
+}
+
 .bg-image {
   background-size: cover;
   background-position: center center;
@@ -553,8 +557,24 @@ h1, h2, h3, h4, h5,
 .site-blocks-cover {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  background-position: center center; }
+
+ }
+.site-blocks-cover-mascot {
+  background-position-y: -20px;
+}
+.site-blocks-cover-wc {
+  background-position-y: -380px;
+}
+
+@media (max-width: 600px) {
+  .site-blocks-cover-mascot {
+    background-position-y: 110px;
+  }
+  .site-blocks-cover-wc {
+    background-position-y: 35px;
+  }
+
+}
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
@@ -573,6 +593,12 @@ h1, h2, h3, h4, h5,
     min-height: 400px;
     /*height: calc(100vh); */
   }
+@media (max-width: 600px) {
+  .site-blocks-cover, .site-blocks-cover > .container > .row {
+    min-height: 300px;
+  }
+
+}
   .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
     min-height: 400px;
     height: calc(20vh); }
