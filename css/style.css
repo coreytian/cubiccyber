@@ -1895,3 +1895,14 @@ h1, h2, h3, h4, h5,
 	}
 	
 }
+.container-services .section-title{
+  font-size: 30px
+}
+.container-services .text-primary{
+  font-size: 2.5rem !important;
+}
+.container-services h3{
+  padding-top: 6px;
+  font-size: 18px;
+}
+
