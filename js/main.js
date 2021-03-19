@@ -301,13 +301,14 @@ jQuery(document).ready(function($) {
         6: [0,1,2,3,4,12,13,14,15,16,17,18,19,20,21,22,23],
         0: [0,1,2,3,4,12,13,14,15,16,17,18,19,20,21,22,23]
     };
+	var weekdays ={Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5,Saturday:6,Sunday:0}
+
+
 	var checkOpeningTime = function(){
 		var d = new Date();
-		var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-		var offsetSydney = 10;
-		var sydneyDate = new Date(utc + (3600000*offsetSydney));
-		var day = sydneyDate.getDay();
-		var hours = sydneyDate.getHours();
+		var hours = parseInt(d.toLocaleString("en-US", {hour:'numeric',hourCycle:'h23',timeZone: "Australia/Sydney"}));
+		var day = d.toLocaleString('en-us', {  weekday: 'long',timeZone: "Australia/Sydney" });
+		day = weekdays[day];
 		var openMascot = openingTimeMascot[day].includes(hours);
 		var openWC = openingTimeWC[day].includes(hours);
 		console.log('Mascot open:'+ openMascot);
