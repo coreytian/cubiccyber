@@ -1905,4 +1905,13 @@ h1, h2, h3, h4, h5,
   padding-top: 6px;
   font-size: 18px;
 }
+#shopSelectModal .close{
+  margin: -1rem -1rem -1rem;
+}
+#shopSelectModal .modal-title{
+  margin:auto;
+}
+#shopSelectModal  .btn.btn-primary {
+  border-color: #fb5a02;
+}
 
